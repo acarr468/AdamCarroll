@@ -1,20 +1,233 @@
+
+<!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="styling.css">
-		<script src="scripts/jquery-1.10.1.min.js"></script>
-		<script src="scripts/scripts.js"></script>
-		<title>
-			This is the starting template
-		</title>
-	</head>
-	<body><center>
-		<br><br>
-		<font size=4 face=arial color=#336699><b>Welcome to a Brinkster Member's site!</b><br><br></font>
-		<font size=3 face=arial color=black>
-			Currently this site is under construction.  Please check back later.<br><br>
-		</font><br><br><br>
-		<font size=4 face=arial color=#336699>
-			Get Your Own <a href='http://www.brinkster.com'>Free Web Site!</a>
-		</font>
-	</center></body>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/styling.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="handheld" />
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+    <script src="scripts/jquery-1.10.1.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <title>
+      This is the starting template
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="title" content="Adam Carroll" />
+    <meta name="keywords" content="Webdev, programmer, software, engineering, software engineering, ruby on rails" />
+    <meta name="description" content="Personal Site For Adam Carroll" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <nav role="navigation">
+        <ul>
+          <li><a href="#skills" class="button-slide" id="skills" title="View my skills and experience">Skills</a></li>
+          <li><a href="#employment" class="button-slide" id="employment" title="See my employment history">Employment</a>
+            <ul class="subnav">
+              <li><a href="#subjob1" class="button-slide sublink" id="subjob1" title="Domain Superstar LLC">Domain Superstar</a></li>
+              <li><a href="#subjob2" class="button-slide sublink" id="subjob2" title="AAI Textron">AAI Textron</a></li>
+            </ul> 
+          </li>
+          <li><a href="#education" class="button-slide" id="education" title="See where I studied and what I learned">Education</a></li>
+          <li><a href="#contact" class="button-slide" id="contact" title="Feel free to Contact Me">Contact</a></li>
+          <li><div class="divider"></div></li>
+          <li><a href="#aboutme" class="button-slide" id="about" title="Click here to learn a little more about me!">About Me</a></li>
+        </ul>
+      </nav>
+    </div> 
+    <!-- End sidebar -->
+    <div class="contents">   
+      <header role="banner">
+        <p id="email_link" class="transparent"><span class="print_only hidden">Email: </span>acarr468@gmail.com</p>
+        <p id="phone" class="transparent"><span class="print_only hidden">Telephone:</span>(843) 608-8743</p>
+        <p id="print" class="transparent"><input id="print_button" type="button" onclick="window.print()" value="Print" /></p>
+      </header>
+
+      <hgroup>
+          <h1 class="headline">ADAM CARROLL</h1>
+          <h2 class="sub_headline">WEB DEVELOPER/SOFTWARE ENGINEER</h2>
+      </hgroup>
+
+      <!-- Skills -->
+      <section class="panel skills" id="skills">
+        <h3 class="title_skills transparent">SKILLS</h3>
+        <div class="divider"></div>
+        <article>
+          <h4>SOME BRIEF INFO ABOUT MY SKILL SET</h4>
+          <div id="chart"></div><p>Google Pie Chart</p>
+        </article>
+        <div class="divider564"></div>
+        <article>
+          <h4><span class="level">ADVANCED</span>Ruby on Rails</h4>
+          <p>Text here</p>
+            <ul>
+              <li>Awesome</li>
+            </ul>
+          <p>Text here</p>
+        </article>
+        <div class="divider564"></div>
+        <article>
+          <h4><span class="level">INTERMIDIATE</span>PSQL</h4>
+          <p>Text here</p>
+        </article>
+        <div class="divider564"></div>
+        <article>
+          <h4><span class="level">BEGINNER</span>Backbone.JS</h4>
+          <p>Text here</p>
+        </article>            
+      </section>
+
+      <!-- Jobs -->
+      <section class="panel jobs" id="jobs">
+        <h3 class="title_employment transparent">EMPLOYMENT</h3>
+        <div class="divider"></div>
+        <article>
+          <h4>SOME BRIEF INFO ABOUT MY EXPERIENCE</h4>
+          <p>Text here</p>
+        </article>
+        <div class="divider564"></div>
+        <article>
+          <h4><span class="sub">2012 - PRESENT</span>WeightTraining</h4>
+          <p><img class="employment_img floatLeft" src="images/WT.png" title="WeightTraining.com" alt="#" />Text Here</p>
+          <p class="web"><a href="#" class="weblink" title="Link to WeightTraining.com">www.WeightTraining.com</a></p>
+        </article>
+        <div class="divider564"></div>
+        <article>
+          <h4><span class="sub">2009 - 2010</span>AAI TEXTRON</h4>
+          <p><img class="employment_img floatLeft" src="images/AAI.png" title="AAI Textron" alt="#" />Text Here</p>    
+          <p class="web"><a href="#" class="weblink" title="Link to AAI Textron">www.aai.com</a></p>
+        </article>        
+      </section>  
+        <!-- Sub sections -->
+        <section class="panel subjob1" id="subjob1">
+          <h3 class="title_employment transparent">DSS</h3>
+          <div class="divider"></div>
+          <article>
+            <h4>DomainSuperstar</h4>
+            <p>Text Here</p>
+          </article>
+          <div class="divider564"></div>
+          <article>
+            <h4>About the company</h4>
+            <p>Text Here</p>
+          </article>
+          <div class="divider564"></div>
+          <article>
+            <h4>Their Websites</h4>
+            <p>Text Here</p>
+              <ul>
+                <li>WeightTraining.com/li>
+              </ul>
+            <p>Text Here</p>
+          </article>
+          <div class="divider564"></div>
+          <article>
+            <h4>My Role</h4>
+            <p>Text Here</p>
+          </article>            
+        </section>
+    
+      <!-- Education -->
+      <section class="panel education" id="education">
+        <h3 class="title_education transparent">EDUCATION</h3>
+        <div class="divider564"></div>
+        <article>
+          <h4><span class="sub">2013 - 2015 (Expected)</span>CLEMSON UNIVERSTIY - CLEMSON, SC</h4>
+          <p>Text Here</p>
+        </article> 
+        <div class="divider"></div>     
+        <article>
+          <h4><span class="sub">2009 - 2013</span>BOB JONES UNIVERSITY - GREENVILLE, SC</h4>
+          <p>Text Here</p>
+        </article>     
+      </section>        
+
+      <!-- Contact -->
+      <section class="panel contact" id="contact">
+        <h3 class="title_contact transparent">CONTACT ME</h3>
+        <div class="divider"></div>
+        <div class="split_col_wrapper">
+          <div class="split_col1">          
+            <article>
+            <h4>CONTACT ME</h4>
+            <p>Please Email Me!</p>
+            </article>      
+            <!-- TODO: Handle no js somehow -->
+            <form action="#contact" method="post" id="contactform">
+              
+              <label for="name">Name:</label>
+              <span class="error" id="name_error">Please enter your name</span>
+              <input type="text" class="textfield input" id="name" name="name" value="" placeholder="Insert your name" autofocus="autofocus" />
+              <label for="email">Email:</label>
+              <span class="error" id="email_error">Please enter your email address</span>
+              <span class="error" id="email_error2">Please enter a valid email address</span>
+              <input type="text" class="textfield input" id="email" name="email" value="" placeholder="Insert your email"/>
+              
+              <label for="msg">Message:</label>
+              <span class="error" id="msg_error">Please enter your message</span>
+              <textarea name="msg" id="msg" class="textarea input" cols="1" rows="1" placeholder="Type your message here"></textarea>   
+              <br />
+              <input type="submit" class="submit_button textfield" value="Contact Me!" id="submit_button" />  
+              <input type="hidden" name="act" value="contact_sbmt" />       
+            </form>
+          </div>
+
+          <!-- Social Icons -->       
+          <div class="split_col2">
+            <article>
+              <h4>SOCIAL MEDIA</h4>
+              <p>I actively participate in the following social networks</p>
+            </article>
+
+            <div class="divider200"></div>
+            <p id="facebook" class="social_media"><a href="#"  title="My Facebook Page">Facebook</a></p>
+            <div class="divider200"></div>
+
+            <p>Please email me!</p>
+          </div>
+        </div>
+      </section>  
+
+      <!-- About -->
+      <section class="panel about" id="aboutme">
+        
+        <h3 class="title_about transparent">ABOUT ME</h3>
+        <div class="divider"></div>
+        <article>
+          <h4>BASIC INFO ABOUT ME</h4>
+          <p>I'm Awesome</p>
+        </article>
+        <div class="divider564"></div>
+        <article>
+        <h4><span class="sub">OBJECTIVE</span>MY OBJECTIVE/GOAL</h4>
+        <p>I want a good job!</p>
+          <ol>
+            <li>Get a good job</li>
+          </ol>
+        </article>
+        <div class="divider564"></div>
+        <article>
+          <h4><span class="sub">HOBBIES</span>MY INTERESTS AND HOBBIES</h4>       
+          <p>I like lots of stuff</p>
+          <ul>
+            <li>Running</li>
+            <li>Cooking</li>
+          </ul>         
+        </article>            
+      </section>
+    
+      <p class="footer t-center">Thanks for checking out my resume!</p> 
+      <div id="printed-footnote">Thank you for printing my resume. If you have any questions, please feel free to contact me.</div>
+    </div><!-- end of page -->
+
+    <!-- Picture -->
+    <div id="picture_wrapper" class="box-shadow transparent">
+      <div id="picture">
+      </div>
+    </div>
+
+    <script language="javascript" src="scripts/navigation.js"></script>
+    <script language="javascript" src="http://www.google.com/jsapi"></script>
+    <script language="javascript" src="js/google_chart.js"></script>
+  </body>
 </html>
