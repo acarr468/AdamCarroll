@@ -1,1 +1,53 @@
-body { background: white; }
+body { background: #585858;color: #ffffff; width: 850px; margin: 0 auto; }
+a { text-decoration: none; cursor: pointer; font-family: DejaVu-regular, arial, helvetica; color: #999; }
+p, li { font-size: 12px; }
+h1, h2, h3, h4, p, a, li { font-family: DejaVu-regular, arial, helvetica; text-shadow: 0 1px 3px #000000; }
+.divider { border: 0; height: 1px; background: #333; margin: 17px 0;
+  background-image: -webkit-linear-gradient(left, #424242, #333, #424242); background-image: -moz-linear-gradient(left, #424242, #333, #424242); 
+  background-image: -ms-linear-gradient(left, #424242, #333, #424242); background-image: -o-linear-gradient(left, #424242, #333, #424242);
+}
+.divider-small { border: 0; height: 1px; margin: 17px 0;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.55), rgba(0,0,0,0)); background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.55), rgba(0,0,0,0));
+  background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.55), rgba(0,0,0,0)); background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.55), rgba(0,0,0,0));
+}
+
+#sidebar {
+  position: fixed;
+  float: left;
+  top: 302px;
+  width: 150px;
+}
+#sidebar ul { list-style: none; }
+#sidebar ul li a { display: block; font-size: 16px;
+  margin: 0.5em 0; line-height: 1em; padding: 4px 5px;
+}
+#sidebar ul li a:hover { color: white; }
+
+.contents {
+  margin-left: 200px; width: 600px; padding: 18px 0 0 40px;
+}
+.header { display: inline-block; }
+.profile-pic  {
+  float: left;
+}
+.profile-pic img {
+  height: 250px; width: 250px; margin-bottom: 30px;
+}
+header { float: right;}
+header p { width: 190px; margin: 0; color: white; }
+header p a:hover { color: white; }
+header p, header p a { font-size: 13px; color: #999; line-height: 9px; text-shadow: none; }
+header p a, header p span { float: right; margin-top: 2px; margin-top: 6px; }
+header p span { margin-top: 8px; }
+header img { height: 22px; }
+p#print { margin-top: 3px; }
+#print_button { color: white; font-size: 12px; margin-top: 7px; }
+hgroup { float: right; width: 340px; font-family: DejaVu-bold, arial, helvetica; }
+hgroup h1 { margin: 30px 0 0; }
+hgroup h2 { color: #ccc; font-size: 23px; margin: 5px 0 0; }
+hgroup h1, h2 { text-align: right; font-size: 40px; }
+
+.panel h3 { text-align: right; margin: -50px 0 0; font-size: 19px; }
+.panel h4 { font-size: 14px; }
+.panel h4 span { float: right; background: #424242; text-shadow: none; font-size: 12px; padding: 4px 8px; margin-top: -3px; }
+
