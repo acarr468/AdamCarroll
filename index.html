@@ -29,6 +29,7 @@
             </ul> 
           </li>
           <li><a href="#education" class="button-slide" id="education" title="See where I studied and what I learned">Education</a></li>
+          <li><a href="#projects" class="button-slide" id="projects" title="See what projects I completed/participated in">Projects</a></li>
           <li><a href="#contact" class="button-slide" id="contact" title="Feel free to Contact Me">Contact</a></li>
           <li><div class="divider"></div></li>
           <li><a href="#aboutme" class="button-slide" id="about" title="Click here to learn a little more about me!">About Me</a></li>
@@ -143,7 +144,7 @@
           <hr class="divider-small"></hr>
           <article>
             <h4>About the company</h4>
-            <p>DomainSuperstar is a start-up dedicated to creating excellent websites that are new and innovative. Their sites cover a wide variety of needs, including fitness, specialized calculators, web domain registration, and author webpage hosting.</p>
+            <p>DomainSuperstar is a small company dedicated to creating excellent websites that are new and innovative. Their sites fulfill a wide variety of needs, including personal fitness, specialized calculators, web domain registration, and author webpage hosting.</p>
           </article>
           <hr class="divider-small"></hr>
           <article>
@@ -206,60 +207,99 @@
       <!-- Education -->
       <section class="panel education" id="education">
         <h3 class="title_education transparent">EDUCATION</h3>
-        <div class="divider564"></div>
+        <div class="divider"></div>
         <article>
           <h4><span class="sub">2013 - 2015 (Expected)</span>CLEMSON UNIVERSTIY - CLEMSON, SC</h4>
-          <p>Text Here</p>
+          <h5>Master of Science in Computer Engineering</h5>
+          <p>I will be attending Clemson beginning in the Fall of 2013 for a masters degree, while also serving as a graduate teaching assistant for the engineering department.</p>
         </article> 
-        <div class="divider"></div>     
+        <div class="divider-small"></div>     
         <article>
           <h4><span class="sub">2009 - 2013</span>BOB JONES UNIVERSITY - GREENVILLE, SC</h4>
-          <p>Text Here</p>
+          <h5>Bachelor of Science in Computer Engineering</h5>
+          <p>I completed a 4-year degree in Engineering with a computer focus while also working as a computer lab technology assistant, including a year as the crew chief. My coursework focused on math, programming, and science, but was also well rounded by BJU's strong liberal arts core. I was involved in many extracurricular activities, including the BJU competitive programming team, recreational atheletics, and local volunteer work.</p>
+          <p>While at BJU I was a part of several major projects, culminating in my Senior Design Project, 80Sim86. Please see my projects page for detailed information on each of project.</p>
+          <h5 class='ul-header'>Projects</h5>
+          <ul>
+            <li>80Sim86 Assembly Language Simulator</li>
+            <li>Project STRATOS weather balloon sent into near-space</li>
+            <li>Hero[0] Computer Game</li>
+          </ul>
         </article>     
-      </section>        
+      </section>
+
+      <!-- Education -->
+      <section class="panel projects" id="projects projects-panel">
+        <h3 class="title_education transparent">PROJECTS</h3>
+        <div class="divider"></div>
+        <article>
+          <h4><span class="sub">2013</span>80Sim86 Assembly Language Simulator</h4>
+          <p>Info</p>
+        </article> 
+        <div class="divider-small"></div>     
+        <article>
+          <h4><span class="sub">2011</span>Project STRATOS - Weather balloon into near-space</h4>
+          <p>Cool stuff</p>
+        </article>
+        <div class="divider-small"></div>     
+        <article>
+          <h4><span class="sub">2010</span>Hero[0] Computer Game</h4>
+          <p>Cool stuff</p>
+        </article>    
+      </section>       
 
       <!-- Contact -->
       <section class="panel contact" id="contact">
         <h3 class="title_contact transparent">CONTACT ME</h3>
         <div class="divider"></div>
-        <div class="split_col_wrapper">
-          <div class="split_col1">          
+        <div class="split-col-wrapper">
+          <div class="split-col-left">          
             <article>
             <h4>CONTACT ME</h4>
-            <p>Please Email Me!</p>
+            <p>If you have any questions for me or would simply like to connect, I would love to hear from you!</p>
             </article>      
             <!-- TODO: Handle no js somehow -->
-            <form action="#contact" method="post" id="contactform">
+            <form action="#contact" method="post" id="contact-form">
               
               <label for="name">Name:</label>
               <span class="error" id="name_error">Please enter your name</span>
-              <input type="text" class="textfield input" id="name" name="name" value="" placeholder="Insert your name" autofocus="autofocus" />
+              <input type="text" class="textfield input name" id="name" name="name" value="" placeholder="Insert your name" autofocus="autofocus" />
               <label for="email">Email:</label>
               <span class="error" id="email_error">Please enter your email address</span>
               <span class="error" id="email_error2">Please enter a valid email address</span>
-              <input type="text" class="textfield input" id="email" name="email" value="" placeholder="Insert your email"/>
+              <input type="text" class="textfield input email" id="email" name="email" value="" placeholder="Insert your email"/>
               
               <label for="msg">Message:</label>
               <span class="error" id="msg_error">Please enter your message</span>
-              <textarea name="msg" id="msg" class="textarea input" cols="1" rows="1" placeholder="Type your message here"></textarea>   
+              <textarea name="msg" id="msg" class="textarea input message" cols="1" rows="1" placeholder="Type your message here"></textarea>   
               <br />
-              <input type="submit" class="submit_button textfield" value="Contact Me!" id="submit_button" />  
+              <input type="submit" class="submit-button textfield" value="Contact Me!" id="submit_button" />  
               <input type="hidden" name="act" value="contact_sbmt" />       
             </form>
           </div>
 
           <!-- Social Icons -->       
-          <div class="split_col2">
+          <div class="split-col-right">
             <article>
               <h4>SOCIAL MEDIA</h4>
-              <p>I actively participate in the following social networks</p>
+              <p>I would love to connect with you! You can find me on any of the following social networks.</p>
             </article>
 
-            <div class="divider200"></div>
-            <p id="facebook" class="social_media"><a href="#"  title="My Facebook Page">Facebook</a></p>
-            <div class="divider200"></div>
-
-            <p>Please email me!</p>
+            <div class="divider-small"></div>
+            <div class='social-icons'>
+              <div>
+                <img class="facebook_img" src="images/facebook.png" title="www.Facebook.com" alt="www.Facebook.com" />
+                <a href='http://www.facebook.com/AdamRCarroll'>Facebook</a>
+              </div>
+              <div>
+                <img class="linkedin_img" src="images/linkedin.png" title="www.LinkedIn.com" alt="www.LinkedIn.com" />
+                <a href='http://www.linkedin.com/in/AdamRCarroll'>LinkedIn</a>
+              </div>
+            </div>
+            <div class="divider-small"></div>
+            <article>
+              <p>I look forward to hearing from you soon!</p>
+            </article>
           </div>
         </div>
       </section>  

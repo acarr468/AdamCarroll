@@ -1,7 +1,10 @@
+/* General */
 body { background: #585858;color: #ffffff; width: 850px; margin: 0 auto; }
-a { text-decoration: none; cursor: pointer; font-family: DejaVu-regular, arial, helvetica; color: #999; }
+a { text-decoration: none; cursor: pointer; font-family: DejaVu-regular, arial, helvetica; color: #999; font-size: 12px; }
 p, li { font-size: 12px; color: #ccc; }
-h1, h2, h3, h4, p, a, li { font-family: DejaVu-regular, arial, helvetica; text-shadow: 0 1px 3px #000000; }
+h5 { margin: 10px 0; }
+h5.ul-header { margin-bottom: 5px; }
+h1, h2, h3, h4, h5, p, a, li { font-family: DejaVu-regular, arial, helvetica; text-shadow: 0 1px 3px #000000; }
 .divider { border: 0; height: 1px; background: #333; margin: 17px 0;
   background-image: -webkit-linear-gradient(left, #424242, #333, #424242); background-image: -moz-linear-gradient(left, #424242, #333, #424242); 
   background-image: -ms-linear-gradient(left, #424242, #333, #424242); background-image: -o-linear-gradient(left, #424242, #333, #424242);
@@ -10,7 +13,11 @@ h1, h2, h3, h4, p, a, li { font-family: DejaVu-regular, arial, helvetica; text-s
   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.55), rgba(0,0,0,0)); background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.55), rgba(0,0,0,0));
   background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.55), rgba(0,0,0,0)); background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.55), rgba(0,0,0,0));
 }
+span.error { display: none; }
+.split-col-left { width: 240px; float: left; }
+.split-col-right { width: 250px; float: right; }
 
+/* Sidebar */
 #sidebar {
   position: fixed;
   float: left;
@@ -24,6 +31,7 @@ h1, h2, h3, h4, p, a, li { font-family: DejaVu-regular, arial, helvetica; text-s
 #sidebar ul li a:hover { color: white; }
 #sidebar ul ul { margin-right: -50px; }
 
+/* Header */
 .contents {
   margin-left: 200px; width: 600px; padding: 18px 0 0 40px;
 }
@@ -48,6 +56,7 @@ hgroup h1 { margin: 30px 0 0; }
 hgroup h2 { color: #ccc; font-size: 23px; margin: 5px 0 0; }
 hgroup h1, h2 { text-align: right; font-size: 40px; }
 
+/* General Panel */
 .panel h3 { text-align: right; margin: -50px 0 0; font-size: 19px; }
 .panel h4 { font-size: 15px; }
 .panel h4 span { float: right; background: #424242; text-shadow: none; font-size: 13px; padding: 4px 8px; margin-top: -3px; }
@@ -58,9 +67,43 @@ hgroup h1, h2 { text-align: right; font-size: 40px; }
 .panel ul { line-height: 1.1em; margin: 0; }
 .panel .weblink { float: left; margin-bottom: 17px; }
 .panel .weblink.not-last { margin-bottom: 3px; }
+
+/* Employment Panel */
 .panel.employment { padding-bottom: 18px; }
 
+/* Contact Panel */
+.panel.contact { padding-bottom: 30px; width: 564px; height: 525px; }
+.panel.contact .split-col-right { padding-left: 68px; }
+.panel.contact h4 { margin-top: 4px; }
+.panel.contact img { width: 24px; margin: 0 25px 0 0; }
+.panel.contact .social-icons div { line-height: 24px; margin-bottom: 15px; }
+#contact-form {
+  background: #eee; padding: 0 20px 20px; margin-top: 18px; overflow: hidden;
+  -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
+}
+#contact-form label {
+  padding: 18px 0 0; font-size: 12px; font-family: arial; display: block; line-height: 1.5em; cursor: pointer; color: #333;
+}
+#contact-form .input {
+  background: #fff; border: solid 1px #E5E5E5; color: #555; outline: 0;
+  box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+  -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+  background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
 
+}
+#contact-form .textfield {
+  padding: 0.75em 10px; width: 180px; font-family: DejaVu-regular, arial, helvetica; font-size: 12px;
+}
+
+#contact-form .textarea {
+  padding: 0.75em 10px; width: 180px; height: 126px; font-family: DejaVu-regular, arial, helvetica; font-size: 12px;
+}
+#contact-form .submit-button {
+  margin: 1.5em 0 0; width: 200px; float: right; background: #555; color: #fff; border: 1px solid #ccc;
+  cursor: pointer; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+}
+
+
+/* Footer */
 .footer { text-align: center; width: 100%; margin-top: 60px; }
 .for-print { display: none; }
-
