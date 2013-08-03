@@ -63,6 +63,7 @@ hgroup h1, h2 { text-align: right; font-size: 40px; }
 .panel img { width: 80px; float: left; margin-top: 5px; margin-bottom: 30px; }
 .panel p { clear: both; }
 .panel p.info { clear: none; padding: 0 0 5px 105px; line-height: 1.5em; margin: 0; }
+.panel p.second { margin-top: 10px; }
 .panel p.web { width: 100px; }
 .panel ul { line-height: 1.1em; margin: 0; }
 .panel .weblink { float: left; margin-bottom: 17px; }
@@ -71,8 +72,11 @@ hgroup h1, h2 { text-align: right; font-size: 40px; }
 /* Employment Panel */
 .panel.employment { padding-bottom: 18px; }
 
+/* Education Panel */
+.panel.education { padding-bottom: 8px; }
+
 /* Contact Panel */
-.panel.contact { padding-bottom: 30px; width: 564px; height: 525px; }
+.panel.contact { padding-bottom: 30px; width: 564px; height: 350px; }/*height: 525px; }*/
 .panel.contact .split-col-right { padding-left: 68px; }
 .panel.contact h4 { margin-top: 4px; }
 .panel.contact img { width: 24px; margin: 0 25px 0 0; }
