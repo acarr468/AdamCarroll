@@ -12,7 +12,7 @@
 
 	// send prepared message
 
-	$sent = mail('acarr468@gmail.com', $subject, $Body);
+	$sent = mail('acarrtechnologies@gmail.com', $subject, $Body);
 
 	//callback for jQuery AJAX
 

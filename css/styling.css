@@ -1,13 +1,23 @@
 /* General */
-body { background: #585858;color: #ffffff; width: 850px; margin: 0 auto; }
+body { background: #585858;color: #ffffff; margin: 0;
+  background: #585858; /* Old browsers */
+  background: -moz-linear-gradient(top, #585858 0%, #2b2b2b 300px); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#585858), color-stop(300px,#2b2b2b)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #585858 0%,#2b2b2b 300px); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #585858 0%,#2b2b2b 300px); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #585858 0%,#2b2b2b 300px); /* IE10+ */
+  background: linear-gradient(to bottom, #585858 0%,#2b2b2b 300px); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585858', endColorstr='#2b2b2b',GradientType=0 ); /* IE6-9 */; /* IE6-9 */; /* IE6-9 */
+}
+.wrapper { width: 850px; margin: 0 auto; }
 a { text-decoration: none; cursor: pointer; font-family: DejaVu-regular, arial, helvetica; color: #999; font-size: 12px; }
 p, li { font-size: 12px; color: #ccc; }
 h5 { margin: 10px 0; }
 h5.ul-header { margin-bottom: 5px; }
 h1, h2, h3, h4, h5, p, a, li { font-family: DejaVu-regular, arial, helvetica; text-shadow: 0 1px 3px #000000; }
 .divider { border: 0; height: 1px; background: #333; margin: 17px 0;
-  background-image: -webkit-linear-gradient(left, #424242, #333, #424242); background-image: -moz-linear-gradient(left, #424242, #333, #424242); 
-  background-image: -ms-linear-gradient(left, #424242, #333, #424242); background-image: -o-linear-gradient(left, #424242, #333, #424242);
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.35), rgba(0,0,0,0.55), rgba(0,0,0,0.35)); background-image: -moz-linear-gradient(left, rgba(0,0,0,0.35), rgba(0,0,0,0.55), rgba(0,0,0,0.35));
+  background-image: -ms-linear-gradient(left, rgba(0,0,0,0.35), rgba(0,0,0,0.55), rgba(0,0,0,0.35)); background-image: -o-linear-gradient(left, rgba(0,0,0,0.35), rgba(0,0,0,0.55), rgba(0,0,0,0.35));
 }
 .divider-small { border: 0; height: 1px; margin: 17px 0; width: 100%;
   background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.55), rgba(0,0,0,0)); background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.55), rgba(0,0,0,0));
@@ -43,22 +53,23 @@ span.error { display: none; }
   height: 250px; width: 250px; margin-bottom: 30px;
 }
 header { float: right;}
-header p { width: 190px; margin: 0; color: white; }
+header p { width: 210px; margin: 0; color: white; }
 header p a:hover { color: white; }
 header p, header p a { font-size: 13px; color: #999; line-height: 9px; text-shadow: none; }
 header p a, header p span { float: right; margin-top: 2px; margin-top: 6px; }
 header p span { margin-top: 8px; }
 header img { height: 22px; }
 p#print { margin-top: 3px; }
-#print_button { color: white; font-size: 12px; margin-top: 7px; }
+p#print img { height: 20px; }
+#print_button { color: white; font-size: 12px; margin-top: 9px; }
 hgroup { float: right; width: 340px; font-family: DejaVu-bold, arial, helvetica; }
-hgroup h1 { margin: 30px 0 0; }
+hgroup h1 { margin: 50px 0 0; }/*margin: 30px 0 0; }*/
 hgroup h2 { color: #ccc; font-size: 23px; margin: 5px 0 0; }
 hgroup h1, h2 { text-align: right; font-size: 40px; }
 
 /* General Panel */
 .panel h3 { text-align: right; margin: -50px 0 0; font-size: 19px; }
-.panel h4 { font-size: 15px; }
+.panel h4 { font-size: 15px; margin-top: 14px; }
 .panel h4 span { float: right; background: #424242; text-shadow: none; font-size: 13px; padding: 4px 8px; margin-top: -3px; }
 .panel img { width: 80px; float: left; margin-top: 5px; margin-bottom: 30px; }
 .panel p { clear: both; }
@@ -74,6 +85,10 @@ hgroup h1, h2 { text-align: right; font-size: 40px; }
 
 /* Education Panel */
 .panel.education { padding-bottom: 8px; }
+
+/* Skills Panel */
+.panel.skills p { margin-bottom: 6px; }
+.panel.skills article h4.other { margin-bottom: 13px; }
 
 /* Contact Panel */
 .panel.contact { padding-bottom: 30px; width: 564px; height: 350px; }/*height: 525px; }*/
@@ -109,5 +124,5 @@ hgroup h1, h2 { text-align: right; font-size: 40px; }
 
 
 /* Footer */
-.footer { text-align: center; width: 100%; margin-top: 60px; }
+.footer { text-align: center; width: 100%; margin: 60px 0 15px; }
 .for-print { display: none; }

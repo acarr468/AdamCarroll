@@ -7,7 +7,7 @@
     <script src="scripts/jquery-1.10.1.min.js"></script>
     <script src="scripts/scripts.js"></script>
     <title>
-      This is the starting template
+      Adam Carroll
     </title>
     <meta charset="UTF-8" />
     <meta name="title" content="Adam Carroll" />
@@ -16,11 +16,11 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
   </head>
   <body>
+    <div class='wrapper'>
     <!-- Sidebar -->
     <div id="sidebar">
       <nav role="navigation">
         <ul>
-          <li><a href="#skills" class="button-slide" id="skills" title="View my skills and experience">Skills</a></li>
           <li><a href="#employment" class="button-slide" id="employment" title="See my employment history">Employment</a>
             <ul class="subnav">
               <li><a href="#subjob1" class="button-slide sublink" id="subjob1" title="Domain Superstar LLC">DomainSuperstar</a></li>
@@ -31,6 +31,7 @@
           <li><a href="#education" class="button-slide" id="education" title="See where I studied and what I learned">Education</a></li>
           <li><a href="#projects" class="button-slide" id="projects" title="See what projects I completed/participated in">Projects</a></li>
           <li><a href="#contact" class="button-slide" id="contact" title="Feel free to Contact Me">Contact</a></li>
+          <li><a href="#skills" class="button-slide" id="skills" title="View my skills and experience">Skills</a></li>
           <li><div class="divider"></div></li>
           <li><a href="#aboutme" class="button-slide" id="about" title="Click here to learn a little more about me!">About Me</a></li>
         </ul>
@@ -43,9 +44,9 @@
           <img src='images/profile-pic.jpg'/>
         </div>
         <header role="banner">
-          <p id="email_link" class="transparent"><img src='images/mail-icon.png'/><a href='#'>acarr468@gmail.com</a></p>
+          <p id="email_link" class="transparent"><img src='images/mail-icon.png'/><a href="mailto:acarrtechnologies@gmail.com" target="_top">acarrtechnologies@gmail.com</a></p>
           <p id="phone" class="transparent"><img src='images/phone-icon.png'/><span>(843) 608-8743</span></p>
-          <p id="print" class="transparent"><img src='images/print-icon.png'/><a href="window.print()" id="print_button">Print</a></p>
+          <!--<p id="print" class="transparent"><img src='images/print-icon.png'/><a href="window.print()" id="print_button">Print</a></p>-->
         </header>
 
         <hgroup>
@@ -54,48 +55,19 @@
         </hgroup>
       </div>
 
-      <!-- Skills -->
-      <section class="panel skills" id="skills">
-        <h3 class="title_skills transparent">SKILLS</h3>
-        <hr class="divider"></hr>
-        <article>
-          <h4>SOME BRIEF INFO ABOUT MY SKILL SET</h4>
-          <div id="chart"></div><p>Google Pie Chart</p>
-        </article>
-        <hr class="divider-small"></hr>
-        <article>
-          <h4><span class="level">ADVANCED</span>Ruby on Rails</h4>
-          <p>Text here</p>
-            <ul>
-              <li>Awesome</li>
-            </ul>
-          <p>Text here</p>
-        </article>
-        <hr class="divider-small"></hr>
-        <article>
-          <h4><span class="level">INTERMIDIATE</span>PSQL</h4>
-          <p>Text here</p>
-        </article>
-        <hr class="divider-small"></hr>
-        <article>
-          <h4><span class="level">BEGINNER</span>Backbone.JS</h4>
-          <p>Text here</p>
-        </article>            
-      </section>
-
       <!-- Jobs -->
       <section class="panel employment" id="employment">
         <h3 class="title_employment transparent">EMPLOYMENT</h3>
         <div class="divider"></div>
         <article>
           <h4>MY WORK EXPERIENCE</h4>
-          <p>I have a wide range of experience in the software engineering, computer science, and academic fields. I've worked as a web developer, software engineer, and technology assistant for three different companies, and am ready and willing to learn any skills necessary for whatever task I am assigned. Please contact me if I can be of any serice to you or your business!</p>
+          <p>I have a wide range of experience in the software engineering, computer science, and academic fields. I've worked as a web developer, software engineer, and technology assistant for three different companies, and am ready and willing to learn any skills necessary for whatever task I am assigned. Please contact me if I can be of any service to you or your business!</p>
         </article>
         <hr class="divider-small"></hr>
         <article>
           <h4><span class="sub">2012 - PRESENT</span>DomainSuperstar LLC</h4>
           <img class="employment_img" src="images/DSS.png" title="www.domainsuperstar.com" alt="www.DomainSuperstar.com" />
-          <p class='info'>I worked on improving and maintaining the WeightTraining.com fitness website, as well as creating and deploying the new Bookster.com site designed for independent authors. I was involved in both sides of development: the back-end code for running the site and computing the data, and also the front-end code for displaying the information in an understandable and appealing way. Skills I learned included Ruby on Rails, Javascript/Jquery, and HTML/CSS/SASS just to name a few. This job was mostly during summer and Christmas breaks, but also throughout the semester as time allowed.</p>
+          <p class='info'>I worked on improving and maintaining the <a href='http://www.weighttraining.com/'>WeightTraining.com</a> fitness website, as well as creating and deploying the new <a href='http://www.bookster.com/'>Bookster.com</a> site designed for independent authors. I was involved in both sides of development: the back-end code for running the site and computing the data, and also the front-end code for displaying the information in an understandable and appealing way. Skills I learned included Ruby on Rails, Javascript/Jquery, and HTML/CSS/SASS just to name a few. This job was mostly during summer and Christmas breaks, but also throughout the semester as time allowed.</p>
           <p class="web">
             <a href="http://www.bookster.com/" class="weblink not-last" title="Link to Bookster.com">www.Bookster.com</a>
             <a href="http://www.WeightTraining.com/" class="weblink" title="Link to WeightTraining.com">www.WeightTraining.com</a>
@@ -104,7 +76,7 @@
         <hr class="divider-small"></hr>
         <article>
           <h4><span class="sub">2010 - 2013</span>Bob Jones University</h4>
-          <img class="employment_img" src="images/BJU.png" title="Bob Jones University" alt="www.BJU.edu" />
+          <img class="employment_img" src="images/BJU.jpg" title="Bob Jones University" alt="www.BJU.edu" />
           <p class='info'>I worked as a technology assistant, helping students with computer-related coursework and completing various tasks for professors. I was also responsible for keeping the labs in order, helping visitors find their way around, and solving the lab's computer problems as they arose. I was promoted to crew chief my final year, giving me responsibility over as many as eleven workers and also the responsibility of arranging worker schedules and enforcing lab rules and policies. This job was during the school year.</p>    
           <p class="web"><a href="http://www.bju.edu" class="weblink" title="Link to Bob Jones University">www.BJU.edu</a></p>
         </article>
@@ -129,7 +101,7 @@
           <div class="divider"></div>
           <article>
             <h4>My Role</h4>
-            <p>I worked on improving and maintaining the <a href='http://www.weighttraining.com/'>WeightTraining.com</a> fitness website, as well as creating and deploying the new <a href='http://www.bookster.com/'>Bookster.com</a> site designed for independent authors. I was involved in both sides of development: the back-end code for running the site and computing the data, and also the front-end code for displaying the information in an understandable and appealing way. During the implementation of <a href='http://www.bookster.com/'>Bookster</a> I was heavily involved in the site's styling, which mostly entailed splicing photoshop designs and replicating them perfectly on the actual site. I also helped implement Bookster's overall functionality and solve problems unforseen in the initial design.
+            <p>I worked on improving and maintaining the <a href='http://www.weighttraining.com/'>WeightTraining.com</a> fitness website, as well as creating and deploying the new <a href='http://www.bookster.com/'>Bookster.com</a> site designed for independent authors. I was involved in both sides of development: the back-end code for running the site and computing the data, and also the front-end code for displaying the information in an understandable and appealing way. During the implementation of <a href='http://www.bookster.com/'>Bookster</a> I spent a great deal of time working on the site's styling, which mostly entailed splicing photoshop designs and replicating them perfectly on the actual site. I also helped implement Bookster's overall functionality and solve problems unforseen in the initial design.
             <br /><br />
             Skills I learned include:
               <ul>
@@ -218,8 +190,8 @@
         <article>
           <h4><span class="sub">2009 - 2013</span>BOB JONES UNIVERSITY - GREENVILLE, SC</h4>
           <h5>Bachelor of Science in Computer Engineering</h5>
-          <p>I completed a 4-year degree in Engineering with a computer focus while also working as a computer lab technology assistant, including a year as the crew chief. My coursework focused on math, programming, and science, but was also well rounded by BJU's strong liberal arts core. I was involved in many extracurricular activities, including the BJU intermural competitive programming team, recreational atheletics, and local volunteer work.</p>
-          <p>While at BJU I was a part of several major projects, culminating in my senior design project, 80Sim86. Please see my projects page for detailed information on each of the projects.</p>
+          <p>I completed a 4-year degree in Engineering while also working as a computer lab technology assistant, including a year as the crew chief. My coursework focused on math, programming, and science, but was also well rounded by BJU's strong liberal arts core. I was involved in many extracurricular activities, including the BJU intermural competitive programming team, recreational athletics, and local volunteer work.</p>
+          <p>While at BJU I was a part of several major academic projects, culminating in my senior design project, 80Sim86. Please see my projects page for detailed information on each of the projects.</p>
           <h5 class='ul-header'>Projects</h5>
           <ul>
             <li>80Sim86 Assembly Language Simulator</li>
@@ -236,21 +208,81 @@
         <article>
           <h4><span class="sub">2013</span>80Sim86 Assembly Language Simulator</h4>
           <img class="80sim86_img" src="images/80sim86.png" title="80Sim86" />
-          <p class='info'>My senior project was an Intel 8086 Assembly Language simulator named 80Sim86. The focus and goal was to write a simulator in C++ that could be used to help students quickly learn the Intel assembly language in a simpler environment than current commercial software. With this program the student is able to select one of 32 supported instructions via a select box, input one or more parameters/operands necessary for the given instruction, execute the instruction, and observe how the memory, registers, and named memory locations are affected. This interface allows for learning by experiment without requiring the student to know complicated syntax or write an entire program in order to run it through a debugger or.</p>
+          <p class='info'>My senior project was an Intel 8086 Assembly Language simulator named 80Sim86. The focus and goal was to write a simulator in C++ that could be used to help students quickly learn the Intel assembly language in a simpler environment than current commercial software. With this program the student is able to select one of 32 supported instructions via a select box, input one or more parameters/operands necessary for the given instruction, execute the instruction, and observe how the memory, registers, and named memory locations are affected. This interface allows for learning by experimentation without requiring the student to know complicated syntax or write an entire program in order to run a simple command through a debugger.</p>
         </article> 
         <div class="divider-small"></div>     
         <article>
           <h4><span class="sub">2011</span>Project STRATOS - Weather balloon into near-space</h4>
           <img class="balloon_img" src="images/balloon.jpg" title="Weather Balloon" />
-          <p class='info'>I and a team of roughly a dozen other students designed, manufactured, and launched a weather balloon with video camera to the edge of space. Our payload also included a cellular phone for GPS tracking and an external battery to extend the life of the video camera in the cooler temperatures of the upper atmosphere. We succeeded in both filming the edge of space at roughly 100,000 feet above the surface of the earth, and also recovering the device roughly 100 miles away once it had returned.</p>
-          <p class='info second'>Our payload was protected by a specially formed styrofoam box, hand warmers to keep the electronics from freezing, and a plexiglass window to allow our video camera to capture footage. My portion of the project focused on the GPS tracking, using a cellular phone and online tracking service to pinpoint the location of our device as it both ascended and returned to earth. I also drove one of the two recovery vehicles that enabled us to get to our device's remote location and served as the photographer on the recovery mission.</p>
+          <p class='info'>I and a team of roughly a dozen other students designed, manufactured, and launched a 'package' with video camera to the edge of space via a weather balloon . Our payload also included a cellular phone for GPS tracking and an external battery to extend the life of the video camera during the long flight. We succeeded in both filming the edge of space at roughly 100,000 feet above the surface of the earth, and also recovering the device roughly 100 miles away once it had returned.</p>
+          <p class='info second'>Our payload was protected by a specially formed styrofoam box, hand warmers to keep the electronics from freezing, and a plexiglass window to allow our video camera to capture footage. My portion of the project focused on the GPS tracking, using a cellular phone and online tracking service to pinpoint the location of our device as it both ascended from and returned to earth. I also served as the photographer on the recovery mission and drove one of the two recovery vehicles that enabled us to get to our device's remote location.</p>
         </article>
         <div class="divider-small"></div>     
         <article>
           <h4><span class="sub">2010</span>Hero[0] Computer Game</h4>
-          <p class='info'>I and two other students worked together to create a computer game for a class project using the C++ language and the Borland IDE. The gameplay was similar to a Zelda style 2D maze/dungeon crawler, but with personal touches and inside jokes from our programming class thrown in. Over the course of about 6 weeks we designed the game from the ground up including the class structure, gameplay, graphics, and storyline. I focused mainly on the programming side of the project, implementing features such as collision detection, map navigation, and scoring/points. The game included a graphical main menu with high scores, saved games, several playable characters, and even a 'cheat'/invincible mode.</p>
+          <p class='info'>I and two other students worked together to create a computer game for a class project using the C++ language and the Borland IDE. The gameplay was similar to a Zelda style 2D maze/dungeon crawler, but with personal touches and inside jokes from our programming class thrown in. Over the course of about six weeks, we designed the game from the ground up including the class structure, gameplay, graphics, and storyline. I focused mainly on the programming side of the project, implementing features such as collision detection, map navigation, and points/scoring. The game included a graphical main menu with high scores, saved games, several playable characters, and even a 'cheat'/invincible mode.</p>
         </article>    
-      </section>       
+      </section>
+
+      <!-- Skills -->
+      <section class="panel skills" id="skills">
+        <h3 class="title_skills transparent">SKILLS</h3>
+        <hr class="divider"></hr>
+        <article>
+          <h4>Web Development</h4>
+          <p>Advanced</p>
+            <ul>
+              <li>Ruby on Rails</li>
+              <li>HTML / CSS / SASS</li>
+              <li>Javascript / JQuery / CoffeeScript</li>
+              <li>Photoshop slicing</li>
+              <li>Github / Source control</li>
+            </ul>
+          <p>Intermediate</p>
+            <ul>
+              <li>Backbone.JS</li>
+              <li>PostgreSQL</li>
+            </ul>
+          <p>Beginner</p>
+            <ul>
+              <li>AJAX</li>
+              <li>Handlebars</li>
+            </ul>
+        </article>
+        <hr class="divider-small"></hr>
+        <article>
+          <h4>Software Engineering / General Computing</h4>
+          <p>Advanced</p>
+            <ul>
+              <li>C++</li>
+              <li>Mac OS X</li>
+              <li>Microsoft Office Suite</li>
+            </ul>
+          <p>Intermediate</p>
+            <ul>
+              <li>Assembly language</li>
+              <li>Microsoft Visual Studio</li>
+              <li>Windows XP, 7, 8</li>
+              <li>Computer hardware / IT</li>
+            </ul>
+          <p>Beginner</p>
+            <ul>
+              <li>C#</li>
+              <li>Java</li>
+            </ul>
+        </article>
+        <hr class="divider-small"></hr>
+        <article>
+          <h4 class='other'>Other</h4>
+          <ul>
+            <li>Problem solving</li>
+            <li>Leadership</li>
+            <li>Strong work ethic</li>
+            <li>Diligent and hardworking</li>
+            <li>Organized and dependable</li>
+          </ul>
+        </article>           
+      </section>      
 
       <!-- Contact -->
       <section class="panel contact" id="contact">
@@ -261,7 +293,7 @@
             <article>
             <h4>CONTACT ME</h4>
             <p>If you have any questions for me or would simply like to connect, I would love to hear from you!</p>
-            <p>You can email me <a href="mailto:acarr468@gmail.com" target="_top">here.</a></p>
+            <p>You can email me <a href="mailto:acarrtechnologies@gmail.com" target="_top">here.</a></p>
             </article>      
             <!-- TODO: Handle no js somehow -->
             <!--
@@ -317,13 +349,13 @@
         <div class="divider"></div>
         <article>
           <h4><span class="sub">INFO</span>BASIC INFO ABOUT ME</h4>
-          <p>I am a 22 year old Computer Engineering graduate student attending Clemson University, and I will be graduating in 2015 with my masters degree. I currently hold a Bachelors of Science degree in Engineering from Bob Jones University, and I love doing anything with computers. I not only enjoy the challenges of the software/programming side, but also the hands-on work involved with assembling and maintaining hardware. I have a special interest in embedded systems and other lower-level assembly language programming, as it begins to blur the lines between software and hardware.</p>
+          <p>I am a 22 year old Computer Engineering graduate student attending Clemson University, and I will be graduating in 2015 with my masters degree. I currently hold a Bachelors of Science degree in Engineering from Bob Jones University, and I love doing anything with computers. I not only enjoy the challenges of the software/programming side, but also the hands-on work involved with assembling and maintaining hardware. I have a special interest in embedded systems and other lower-level assembly language programming, as it begins to combine both software and hardware.</p>
           <p>My past work experience is mostly in the software industry, working for both a small web development company and a large aeronautics company during my school breaks. I love learning, especially when it involves computers, and am willing to tackle any obstacle presented by a new job.</p>
         </article>
         <div class="divider-small"></div>
         <article>
           <h4><span class="sub">HOBBIES</span>MY INTERESTS AND HOBBIES</h4>       
-          <p>My personal interests include recreational running, cooking, computer magazines, tech news, and bargain hunting. I currently reside in Clemson, SC, but my hometown is Charleston, SC where I spent most of my life growing up. I am a born-again Christian with the goal of doing my best on any task while being as ethical and straightforward as possible.</p>        
+          <p>My personal interests include recreational running, cooking, computer magazines, tech news, and bargain hunting. I currently reside in Clemson, SC, but my hometown where I spent most of my life growing up is Charleston, SC. I am a born-again Christian with the goal of doing my best on any task while being as ethical and honest as possible.</p>        
         </article>            
       </section>
     
@@ -340,5 +372,6 @@
     <script language="javascript" src="scripts/navigation.js"></script>
     <script language="javascript" src="http://www.google.com/jsapi"></script>
     <script language="javascript" src="js/google_chart.js"></script>
+  </div>
   </body>
 </html>
