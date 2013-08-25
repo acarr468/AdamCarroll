@@ -96,7 +96,7 @@ hgroup h1, h2 { text-align: right; font-size: 40px; }
 .panel.contact .split-col-right { padding-left: 68px; }
 .panel.contact h4 { margin-top: 4px; }
 .panel.contact img { width: 24px; margin: 0 25px 0 0; }
-.panel.contact .social-icons div { line-height: 24px; margin-bottom: 15px; }
+.panel.contact .social-icons div { line-height: 24px; margin-bottom: 12px; }
 #contact-form {
   background: #eee; padding: 0 20px 20px; margin-top: 18px; overflow: hidden;
   -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;
