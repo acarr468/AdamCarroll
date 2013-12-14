@@ -73,6 +73,7 @@ hgroup h1, h2 { text-align: right; font-size: 40px; }
 .panel h4 { font-size: 16px; margin: 14px 0 16px; }
 .panel h4 span { float: right; background: #585858; text-shadow: none; font-size: 13px; padding: 4px 8px; margin-top: -3px; }
 .panel img { width: 80px; float: left; margin-top: 5px; margin-bottom: 30px; }
+.panel .image-substitute { width: 80px; float: left; margin-top: 0px; margin-bottom: 30px; font-weight: bold; color: white; font-size: 14px; }
 .panel p { clear: both; }
 .panel p.info { clear: none; padding: 0 0 3px 105px; margin: 0; }
 .panel p.second { margin-top: 10px; }
