@@ -31,9 +31,8 @@ span.error { display: none; }
 
 /* Sidebar */
 #sidebar {
-  position: fixed;
   float: left;
-  top: 302px;
+  margin-top: 295px;
   width: 150px;
 }
 #sidebar ul { list-style: none; }
@@ -45,7 +44,7 @@ span.error { display: none; }
 
 /* Header */
 .contents {
-  margin-left: 200px; width: 600px; padding: 18px 0 0 40px;
+  width: 600px; padding: 18px 0 0 40px; float: right;
 }
 .header { display: inline-block; }
 .profile-pic  {
