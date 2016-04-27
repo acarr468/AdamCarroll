@@ -10,6 +10,26 @@ body { background: #585858;color: #ffffff; margin: 0;
   background: linear-gradient(to bottom, #585858 0%,#3a3a3a 300px); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585858', endColorstr='#3a3a3a',GradientType=0 ); /* IE6-9 */; /* IE6-9 */; /* IE6-9 */
 }
+
+/* This is a hack to get IE to display full height backgrounds (wrapper needs to take height of internal floated divs) */
+.wrapper.micro-cf:before,
+.wrapper.micro-cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.wrapper.micro-cf:after {
+  clear: both;
+}
+
+/**
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+.wrapper.micro-cf {
+  *zoom: 1;
+}
+
 .wrapper { width: 850px; margin: 0 auto; height: 100%; }
 a { text-decoration: none; cursor: pointer; font-family: DejaVu-regular, arial, helvetica; color: #888; font-size: 12px; }
 p, li { font-size: 13px; color: #ccc; line-height: 1.3em; }
@@ -54,7 +74,7 @@ span.error { display: none; }
   height: 250px; width: 250px; margin-bottom: 30px;
 }
 header { float: right;}
-header p { width: 210px; margin: 0; color: white; }
+header p { width: 215px; margin: 0; color: white; }
 header p a:hover { color: white; }
 header p, header p a { font-size: 13px; color: #999; line-height: 9px; text-shadow: none; }
 header p a, header p span { float: right; margin-top: 2px; margin-top: 6px; }

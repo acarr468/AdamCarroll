@@ -1,1 +1,22 @@
-body { background: white; }
+@media only screen and (max-device-width: 480px) {
+  .wrapper { width: auto; }
+  .contents { width: auto; padding: 0px; float: none; }
+  #sidebar { display: none; }
+  section.panel, .footer { padding: 0 25px; }
+  .profile-pic { float: none; text-align: center; }
+  .header { width: 100%; padding-top: 30px; }
+  .header header { float: none; margin: auto; width: 215px; }
+  .header header p { width: auto; }
+
+  .panel.employment, .panel.education, .panel.projects, .panel.contact {
+      display: block !important;
+      margin-top: 60px;
+      margin-bottom: 0;
+      padding-bottom: 1px;
+  }
+  .panel.education ul { margin-bottom: 10px; }
+  .panel.contact { width: auto; height: auto; padding-bottom: 0; }
+  .panel.contact h3 { display: none; }
+  .split-col-left { width: auto; float: none; }
+  .split-col-right { display: none; }
+}
