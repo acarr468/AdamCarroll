@@ -10,6 +10,7 @@ body { background: #585858;color: #ffffff; margin: 0;
   background: linear-gradient(to bottom, #585858 0%,#3a3a3a 300px); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#585858', endColorstr='#3a3a3a',GradientType=0 ); /* IE6-9 */; /* IE6-9 */; /* IE6-9 */
 }
+.mobile-only { display: none; }
 
 /* This is a hack to get IE to display full height backgrounds (wrapper needs to take height of internal floated divs) */
 .wrapper.micro-cf:before,
