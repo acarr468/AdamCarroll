@@ -99,9 +99,12 @@ hgroup h1, h2 { text-align: right; font-size: 40px; }
 .panel .image-substitute { width: 80px; float: left; margin-top: 0px; margin-bottom: 30px; font-weight: bold; color: white; font-size: 14px; }
 .panel p { clear: both; }
 .panel p.info { clear: none; padding: 0 0 3px 105px; margin: 0; }
+.panel ul.info { padding-left: 122px; margin-top: 7px; }
 .panel p.second { margin-top: 10px; }
 .panel p.web { width: 100px; margin-bottom: 10px; }
+.panel p.heading { margin-bottom: 8px; }
 .panel ul { line-height: 1.1em; margin: 0; }
+.panel ul.accomplishments { margin-bottom: 16px; }
 .panel .weblink {margin-bottom: 0px; }
 .panel .weblink.not-last { margin-bottom: 1px; }
 
